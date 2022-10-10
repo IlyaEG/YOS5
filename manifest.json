@@ -1,0 +1,32 @@
+{
+    "manifest_version": 2,
+    "name": "YOS5",
+    "description": "Access configured hosts via you own socks5 proxy server",
+    "version": "0.1",
+    "homepage_url": "https://github.com/IlyaEG/YOS5",
+    "icons": {
+        "48": "icons/3d-add-hole.svg",
+        "96": "icons/3d-add-hole.svg"
+    },
+    "background": {
+        "scripts": [
+            "background/proxy.js",
+            "background/action.js"
+        ]
+    },
+    "page_action": {
+        "default_icon": "icons/3d-add-hole-gray.svg",
+        "browser_style": true
+    },
+    "options_ui": {
+        "page": "options/options.html",
+        "browser_style": true
+    },
+    "permissions": [
+        "tabs",
+        "activeTab",
+        "proxy",
+        "storage",
+        "<all_urls>"
+    ]
+}
